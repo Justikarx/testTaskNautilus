@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <meta name="description" content="Галерея недвижимости Наутилус в Новосибирске. Продуманная архитектура, идеальная локация в историческом центре, престижный район. Узнайте подробности о комфортном жилье премиум-класса.">
+    <meta name="keywords" content="недвижимость Новосибирск, Наутилус, премиум жилье, центр города, исторический квартал, престижный район, архитектура, комфорт">
+    <meta name="author" content="Наутилус">
+    <meta name="robots" content="index, follow">
+ 
+    <meta property="og:title" content="Наутилус - Галерея недвижимости премиум-класса">
+    <meta property="og:description" content="Откройте для себя детали подлинного комфорта в историческом центре Новосибирска. Продуманная архитектура и престижная локация.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ru_RU">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Наутилус - Галерея недвижимости премиум-класса">
+    <meta name="twitter:description" content="Откройте для себя детали подлинного комфорта в историческом центре Новосибирска.">
+
+    <link rel="canonical" href="https://example.com/gallery">
+    
+    <link rel="preload" href="./styles/style.css" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" as="script">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Наутилус - Галерея недвижимости премиум-класса в Новосибирске</title>
+</head>
+<body>
+
+<main>
+    <section aria-label="Галерея преимуществ недвижимости">
+        <div class="gallery-container" role="region" aria-label="Слайдер карточек с преимуществами ЖК Наутилус">
+            <div class="gallery-card" id="first-card" role="article" aria-label="Карточка: Продуманная архитектура.">
+                <div class="gallery-card-bg" aria-hidden="true"></div>
+                <div class="card-filling">
+                    <div class="card-text-container">
+                        <p class="advantage">Преимущества</p>
+                        <h2 class="card-header">Детали подлинного <br> комфорта</h2>
+                        <p class="card-text">Чистая геометрия. Баланс простоты и масштаба. Архитектура, которая подчёркивает статус и вкус. Чистая геометрия. Баланс простоты и масштаба. Архитектура, которая подчёркивает статус и вкус</p>
+                    </div>
+                    <button class="details-button" aria-label="Узнать подробнее о продуманной архитектуре">
+                        <a href="#" class="card-link">узнать подробнее</a>
+                    </button>
+                </div>
+                <div class="card-description">
+                    <h2>1/3 Продуманная архитектура</h2>
+                </div>
+            </div>
+            
+            <div class="gallery-card" id="second-card" role="article" aria-label="Карточка: Идеальная локация">
+                <div class="gallery-card-bg" aria-hidden="true"></div>
+                <div class="card-filling">
+                    <div class="card-text-container">
+                        <p class="advantage">Преимущества</p>
+                        <h2 class="card-header">Идеальная <br> локация</h2>
+                        <p class="card-text">наутилус расположен В ЦЕНТРАЛЬНОМ РАЙОНЕ НОВОСИБИРСКА, ВНУТРИ ГРАДООБРАЗУЮЩЕГО ИСТОРИЧЕСКОГО КВАРТАЛА, В 5 МИНУТАХ ОТ ГЛАВНОЙ ПЛОЩАДИ ГОРОДА - ПЛОЩАДИ ЛЕНИНА , МЕЖДУ ГЛАВНОЙ</p>
+                    </div>
+                    <button class="details-button" aria-label="Узнать подробнее об идеальной локации">
+                        <a href="#" class="card-link">узнать подробнее</a>
+                    </button>
+                </div>
+                <div class="card-description">
+                    <h2>2/3 Исторический статус места</h2>
+                </div>
+            </div>
+            
+            <div class="gallery-card" id="third-card" role="article" aria-label="Карточка: Престижный район">
+                <div class="gallery-card-bg" aria-hidden="true"></div>
+                <div class="card-filling">
+                    <div class="card-text-container">
+                        <p class="advantage">Преимущества</p>
+                        <h2 class="card-header">Престижный <br> район</h2>
+                        <p class="card-text">на протяжении нескольких ДЕСЯТИЛЕТИЙ КВАРТАЛ, ОБРАЗОВАННЫЙ АЛЬЯНСОМ УЛИЦ ЕРМАКА , ДЕРЖАВИНА, КРЫЛОВА И КРАСНЫМ ПРОСПЕКТОМ - ЧАСТЬ ЗНАМЕНИТОГО «ТИХОГО ЦЕНТРА», В КОТОРОМ В НОВОСИБИРСКЕ СТРОЯТСЯ САМЫЕ ПРЕСТИЖНЫЕ ДОМА</p>
+                    </div>
+                    <button class="details-button" aria-label="Узнать подробнее о престижном районе">
+                        <a href="#" class="card-link">узнать подробнее</a>
+                    </button>
+                </div>
+                <div class="card-description">
+                    <h2>3/3 Высокий социальный статус места</h2>
+                </div>
+            </div>
+            
+            <div class="scroll" role="navigation" aria-label="Навигация по слайдам">
+                <div class="section-scroll">
+                    <div class="slider-line" aria-hidden="true"></div>
+                    <div class="slider-indicator position-left" aria-hidden="true"></div>
+                    <div class="slider-button" id="slider-button-left" role="button" aria-label="Предыдущий слайд" tabindex="0">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="slider-button" id="slider-button-right" role="button" aria-label="Следующий слайд" tabindex="0">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </section>
+</main>
+
+<script>
+
+// Функция для пульсации активной карточки
+function startCardPulse(card) {
+     card.classList.add('pulse');
+}
+
+function stopCardPulse(card) {
+    card.classList.remove('pulse');
+}
+
+class SmoothSlider {
+    constructor() {
+        this.cards = document.querySelectorAll('.gallery-card');
+        this.leftButton = document.getElementById('slider-button-left');
+        this.rightButton = document.getElementById('slider-button-right');
+        this.indicator = document.querySelector('.slider-indicator');
+        this.currentIndex = 0;
+        this.isAnimating = false;
+        
+        this.init();
+    }
+    
+    init() {
+        // Устанавливаем начальные позиции карточек
+        this.cards.forEach((card, index) => {
+            if (index === 0) {
+                gsap.set(card, { zIndex: 2 });
+                card.setAttribute('aria-current', 'true');
+            } else {
+                gsap.set(card, { xPercent: 100, zIndex: 1 });
+                card.setAttribute('aria-current', 'false');
+            }
+        });
+        
+        
+        this.leftButton.addEventListener('click', () => this.slidePrev());
+        this.rightButton.addEventListener('click', () => this.slideNext());
+        
+        
+        this.leftButton.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                this.slidePrev();
+            }
+        });
+        this.rightButton.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                this.slideNext();
+            }
+        });
+        
+        // Добавляем поддержку свайпов для мобильных устройств
+        this.addSwipeSupport();
+        
+        
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') this.slidePrev();
+            if (e.key === 'ArrowRight') this.slideNext();
+        });
+        startCardPulse(this.cards[0]);
+        
+        // Обновляем aria-live для объявления изменений
+        this.announceSlideChange();
+    }
+    
+    slideNext() {
+        if (this.isAnimating) return;
+        
+        const prevIndex = this.currentIndex;
+        this.currentIndex = (this.currentIndex + 1) % this.cards.length;
+        this.animateSlide(prevIndex, this.currentIndex, 'next');
+    }
+    
+    slidePrev() {
+        if (this.isAnimating) return;
+        
+        const prevIndex = this.currentIndex;
+        this.currentIndex = (this.currentIndex - 1 + this.cards.length) % this.cards.length;
+        this.animateSlide(prevIndex, this.currentIndex, 'prev');
+    }
+    
+    animateSlide(fromIndex, toIndex, direction) {
+        this.isAnimating = true;
+
+        const fromCard = this.cards[fromIndex];
+        const toCard = this.cards[toIndex];
+
+        // Обновляем aria-current для доступности
+        fromCard.setAttribute('aria-current', 'false');
+        toCard.setAttribute('aria-current', 'true');
+
+        
+        const tl = gsap.timeline({
+            onComplete: () => {
+                this.isAnimating = false;
+                this.announceSlideChange();
+            }
+        });
+
+       
+        if (direction === 'next') {
+            gsap.set(toCard, { xPercent: 100, zIndex: 3 });
+        } else {
+            gsap.set(toCard, { xPercent: -100, zIndex: 3 });
+        }
+
+        // Анимация появления новой карточки
+        tl.to(toCard, {
+            xPercent: 0,
+            duration: 1.2,
+            ease: "power3.inOut"
+        });
+
+        //Анимация элементов внутри карточки
+        tl.fromTo(toCard.querySelectorAll('.advantage, .card-header, .card-text, .details-button, .card-description'),
+            {
+                opacity: 0,
+                y: 30
+            },
+            {
+                opacity: 1,
+                y: 0,
+                duration: 0.8,
+                stagger: 0.1,
+                ease: "power2.out"
+            }, "-=0.8");
+
+        tl.to(fromCard.querySelectorAll('.advantage, .card-header, .card-text, .details-button, .card-description'),
+            {
+                opacity: 0,
+                y: -20,
+                duration: 0.5,
+                stagger: 0.05,
+                ease: "power2.in"
+            }, "-=1.2");
+
+
+        tl.set(fromCard, { 
+            xPercent: direction === 'next' ? -100 : 100, 
+            zIndex: 1 
+        });
+
+        tl.set(toCard, { zIndex: 2 });
+
+  
+        tl.call(() => stopCardPulse(fromCard));
+
+        tl.call(() => startCardPulse(toCard));
+
+        this.animateIndicator();
+    }
+
+    
+    
+    animateIndicator() {
+
+        const positions = [
+            0, 
+            (document.querySelector('.slider-line').offsetWidth / 3), 
+            (document.querySelector('.slider-line').offsetWidth / 3) * 2 
+        ];
+        
+        const baseLeft = 80; 
+        const x = positions[this.currentIndex];
+
+        gsap.to(this.indicator, {
+            x: x,
+            duration: 0.8,
+            ease: "power2.inOut"
+        });
+    }
+    
+    announceSlideChange() {
+        const slideNames = [
+            'Продуманная архитектура',
+            'Идеальная локация',
+            'Престижный район'
+        ];
+        
+        
+        let announcer = document.getElementById('slide-announcer');
+        if (!announcer) {
+            announcer = document.createElement('div');
+            announcer.id = 'slide-announcer';
+            announcer.setAttribute('aria-live', 'polite');
+            announcer.setAttribute('aria-atomic', 'true');
+            announcer.style.position = 'absolute';
+            announcer.style.left = '-10000px';
+            announcer.style.width = '1px';
+            announcer.style.height = '1px';
+            announcer.style.overflow = 'hidden';
+            document.body.appendChild(announcer);
+        }
+        
+        announcer.textContent = `Слайд ${this.currentIndex + 1} из 3: ${slideNames[this.currentIndex]}`;
+    }
+    
+    addSwipeSupport() {
+        let startX = 0;
+        let startY = 0;
+        let distX = 0;
+        let distY = 0;
+        
+        const container = document.querySelector('.gallery-container');
+        
+        container.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].pageX;
+            startY = e.touches[0].pageY;
+        });
+        
+        container.addEventListener('touchmove', (e) => {
+            if (!startX || !startY) return;
+            
+            distX = e.touches[0].pageX - startX;
+            distY = e.touches[0].pageY - startY;
+        });
+        
+        container.addEventListener('touchend', () => {
+            if (Math.abs(distX) > Math.abs(distY) && Math.abs(distX) > 50) {
+                if (distX > 0) {
+                    this.slidePrev();
+                } else {
+                    this.slideNext();
+                }
+            }
+            
+            startX = 0;
+            startY = 0;
+            distX = 0;
+            distY = 0;
+        });
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const slider = new SmoothSlider();
+});
+</script>    
+    
+</body>
+</html>
